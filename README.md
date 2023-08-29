@@ -10,6 +10,7 @@ Exercício:
 Código do medicamento (identificador único);
 Nome do medicamento;
 Preco de venda.
+
 Criar um formulário que cadastre estes dados para três medicamentos quaisquer. Em seguida, criar um script em PHP que:
 a) Armazene estes dados em uma estrutura matricial. Use o código do medicamento como índice associativo;
 b) Mostre os dados de todos os medicamentos cadastrados na matriz no formato tabular;
