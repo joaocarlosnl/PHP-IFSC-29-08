@@ -51,11 +51,6 @@
  </form>
 
  <?php
-  //note que estamos inserindo todos os comandos de tratamento dos dados do formulário no mesmo arquivo 
-  //que contém o próprio formulário
-
-  //para evitar que o PHP devolva uma mensagem de erro dizendo que não recebeu nenhum dado do formulário, 
-  //devemos autorizar a execução do código somente após o clique do botão submit
   
   if(isset($_POST["enviar"]))
    {
@@ -71,14 +66,10 @@
    $preco2 = $_POST['preco2'];
    $preco3 = $_POST['preco3'];
 
-   //representando estes dados em uma matriz em PHP
    $matrizMedicamentos = [$codigo1 => [$remedio1, $preco1],
                     $codigo2 => [$remedio2, $preco2],
                     $codigo3 => [$remedio3, $preco3]];
               
-   //echo "<pre>";
-   //print_r($matrizMedicamentos);
-   //echo "</pre>";
 
    echo "<table>
           <caption> Relação de medicamentos </caption>
