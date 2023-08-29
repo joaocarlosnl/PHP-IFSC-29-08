@@ -3,7 +3,7 @@
 <head> 
   <meta charset="utf-8"> 
   <title> Tratamento de matrizes em PHP </title> 
-  <link rel="stylesheet" href="formata-formulario.css">  
+  <link rel="stylesheet" href="formata-formulario-index.css">  
 </head> 
 
 <body> 
@@ -70,7 +70,6 @@
                     $codigo2 => [$remedio2, $preco2],
                     $codigo3 => [$remedio3, $preco3]];
               
-
    echo "<table>
           <caption> Relação de medicamentos </caption>
           <tr>
@@ -80,15 +79,29 @@
           </tr>";
 
     foreach($matrizMedicamentos as $matriz => $vetorInterno)
-     {
-     echo "<tr>
+    {     
+        echo "<tr>
             <td> $matriz </td>
             <td> $vetorInterno[0] </td>
             <td> $vetorInterno[1] </td>
           </tr>";  
-     }
+    }
     echo "</table>";
    }
+
+    foreach($matrizMedicamentos as $matriz => $vetorInterno)
+    {
+    $vetorPrecos[$matriz] = $vetorInterno[1];
+    }
+
+   $menorPreco = min($vetorPrecos);
+   $codigoMenorPreco = array_search($menorPreco, $vetorPrecos);
+   $medicMaisBarato = $matrizMedicamentos[$codigoMenorPreco][0];
+
+   echo "<p> Dados do medicamento mais barato: <br>
+         Nome = <span> $medicMaisBarato </span> <br>
+         Código = <span> $codigoMenorPreco </span> <br>
+         Preço = <span> $menorPreco </span> </p>";
  ?>    
 </body> 
 </html> 
