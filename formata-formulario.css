@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html {
+ background-image: url(fundo.jpg);
+ background-size: 100% 100%;
+ font-family: "Roboto Condensed";
+ background-repeat: no-repeat;
+ min-height: 100%;
+}
+
+body {
+ margin: 0;
+}
+
+h1 {
+ text-align: center;
+ border: 1px solid #fff;
+ margin: 0;
+ background-color: rgba(255, 255, 255, 0.6);
+ margin-bottom: 40px;
+ box-shadow: 0 0 5px 5px #0a7891;
+}
+
+fieldset {
+ width: 50%;
+ margin: auto;
+ box-shadow: 0 0 5px 5px #0a7891;
+ background-color: rgba(255, 255, 255, 0.5);
+ padding-top: 20px;
+ margin-bottom: 50px;
+ border-radius: 10px;
+}
+
+legend {
+ background-color: rgba(255, 255, 255, 0.8);
+ border: 1px solid #fff;
+ border-radius: 10px;
+}
+
+label.alinha {
+ width: 110px;
+ display: inline-block;
+ text-align: right;
+ margin-bottom: 15px;
+}
+
+input, button {
+ font-family: "Roboto Condensed";
+}
+
+/*utilização de seletores de atributo*/
+input[name="nome"] {
+ width: 250px;
+}
+
+button {
+ height: 45px;
+ font-size: 18px;
+ font-weight: bold;
+ margin: auto;
+}
+
+p {
+ border: 1px solid #fff;
+ width: 50%;
+ margin: 20px auto;
+ padding: 20px;
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.7);
+}
+
+span {
+ font-weight: bold;
+ font-style: italic;
+}
+
+input[name*="nome"] {
+ width: 250px;
+}
+
+div {
+ width: 235px;
+ margin: auto;
+ margin-bottom: 30px;
+}
+
+table {
+ width: 50%;
+ border: 1px solid #fff;
+ margin: 30px auto;
+ border-spacing: 0;
+}
+
+th, td {
+ border: 1px solid #fff; 
+}
+
+th {
+ background-color: #eee;
+}
+
+td {
+ text-align: center;
+ background: #fff;
+}
